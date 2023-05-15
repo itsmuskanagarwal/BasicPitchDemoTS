@@ -1,0 +1,16 @@
+<h1>Audio-to-MIDI Converter:</h1>
+<div>
+  <h2> Add MP3 or Wav files:</h2>
+  <input type="file" (change)="onFileSelected($event)" accept="audio/*"  #fileInput />
+  <button (click)="convert()">Convert to MIDI</button>
+</div>
+<div *ngIf="audioSrc">
+  <h2> Your audio files:</h2>
+  <audio controls [src]="audioSrc"></audio>
+  <button (click)="clear()">Clear</button>
+</div>
+<div *ngIf="conversionResult">
+  <h2> MIDI files:</h2>
+  <p>{{conversionResult}}</p>
+</div>
+

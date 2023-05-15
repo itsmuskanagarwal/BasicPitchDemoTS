@@ -1,0 +1,21 @@
+/* Style the input and button */
+input[type="file"],
+button {
+  margin: 10px;
+  font-size: 1.2em;
+  padding: 5px;
+}
+
+/* Style the audio player */
+audio {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Style the conversion result text */
+p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
